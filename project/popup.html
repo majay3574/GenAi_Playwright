@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playwright Test Generator</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Playwright Test Generator</h1>
+      <div class="api-key-section">
+        <input type="password" id="apiKey" placeholder="Enter Gemini API Key">
+        <button id="saveApiKey">Save Key</button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="controls">
+        <button id="startPicker" class="primary-button">
+          <span class="icon">🎯</span> Start Element Picker
+        </button>
+        <button id="generateTest" class="secondary-button" disabled>
+          <span class="icon">✨</span> Generate Test
+        </button>
+      </div>
+
+      <div class="selected-elements">
+        <h3>Selected Elements</h3>
+        <ul id="elementsList"></ul>
+      </div>
+
+      <div class="generated-code">
+        <h3>Generated Playwright Test</h3>
+        <pre id="codeOutput"><code></code></pre>
+        <button id="copyCode" class="utility-button">
+          <span class="icon">📋</span> Copy Code
+        </button>
+      </div>
+    </div>
+
+    <div id="status" class="status-message"></div>
+  </div>
+
+  <script src="popup.js" defer></script>
+</body>
+</html>
