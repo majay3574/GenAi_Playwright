@@ -2,8 +2,8 @@ function updateElementInfo(element) {
   if (!infoPanel) {
     // Create info panel if it doesn't exist
     infoPanel = document.createElement('div');
-    infoPanel.id = 'element-picker-info';
-    infoPanel.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,0.8);color:white;padding:10px;z-index:999999;font-family:monospace;max-height:150px;overflow:auto;';
+   // infoPanel.id = 'element-picker-info';
+    //infoPanel.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,0.8);color:white;padding:10px;z-index:999999;font-family:monospace;max-height:150px;overflow:auto;';
     document.body.appendChild(infoPanel);
   }
   
